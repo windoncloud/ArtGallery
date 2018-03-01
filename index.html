@@ -141,31 +141,34 @@
             background-color: #aaa;
             text-align: center;
             border-radius: 50%;
-            background:#aaa url(images/revolve.png) 5px no-repeat;
-            background-size:20px 20px;
+            /*background:#aaa url(images/revolve.png) 5px no-repeat;*/
+            /*background-size:20px 20px;*/
 
             -webkit-transform: scale(.48);
         }
 
         .nav .i:after{
-            /*content:"\e600";*/
-            /*font-family: 'icons';*/
             font-size: 80%;
             display: inline-block;
             line-height: 30px;
             text-align: center;
             color: #fff;
-            background-img: 'url(images/revolve.png)' no-repeat;
+            opacity: 0;
         }
 
         /*选中样式*/
         .nav .i_current{
             -webkit-transform: scale(1);
-
+            background:#aaa url(images/revolve.png) 5px no-repeat;
+            background-size:20px 20px;
+        }
+        .nav .i_current:after{
+            opacity: 1;
         }
         /*背面样式*/
         .nav .i_back{
-
+            -webkit-transform: rotateY(-180deg);
+            background-color: #555;
         }
 
 
@@ -315,8 +318,8 @@
         //按钮控制处理
         var navs = g('.i');
         for(var s = 0;s<navs.length;s++){
-            navs[s].className = navs[s].className.replace(/i_current\s*/,' ');
-            navs[s].className = navs[s].className.replace(/i_back\s*/,' ');
+            navs[s].className = navs[s].className.replace(/\s*i_current\s*/,' ');
+            navs[s].className = navs[s].className.replace(/\s*i_back\s*/,' ');
         }
         g('#nav_'+n).className +=' i_current ';
 
@@ -326,10 +329,18 @@
     // 1.翻面控制
     function turn (elem){
         var cls =elem.className;
+        var n =elem.id.split('_')[1];
+        //导航小圆点点击变化
+        if(!/photo_center/.test(cls)){
+            return rsort(n);
+        }
+
         if(/photo_front/.test(cls)){
             cls = cls.replace(/photo_front/, 'photo_back');
+            g('#nav_'+n).className +=' i_back ';
         }else{
             cls = cls.replace(/photo_back/, 'photo_front');
+            g('#nav_'+n).className =g('#nav_'+n).className.replace(/\s*i_back\s*/,' ');
         }
         return elem.className =cls;
     }
