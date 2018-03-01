@@ -119,6 +119,56 @@
             -webkit-transform:rotateY(180deg);
         }
 
+        /*控制按钮样式*/
+        .nav{
+            width:80%;
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            left: 10%;
+            bottom: 20px;
+            z-index: 999;
+            background-color: #fff;
+
+          }
+
+        /*普通样式*/
+        .nav .i{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            cursor: pointer;
+            background-color: #aaa;
+            text-align: center;
+            border-radius: 50%;
+            background:#aaa url(images/revolve.png) 5px no-repeat;
+            background-size:20px 20px;
+
+            -webkit-transform: scale(.48);
+        }
+
+        .nav .i:after{
+            /*content:"\e600";*/
+            /*font-family: 'icons';*/
+            font-size: 80%;
+            display: inline-block;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            background-img: 'url(images/revolve.png)' no-repeat;
+        }
+
+        /*选中样式*/
+        .nav .i_current{
+            -webkit-transform: scale(1);
+
+        }
+        /*背面样式*/
+        .nav .i_back{
+
+        }
+
+
     </style>
 </head>
 <body onselectstart="return false;">
@@ -172,6 +222,9 @@
 
         var template = g('#wrap').innerHTML;
         var html = [];
+        var nav = [];
+
+        // 7.输出控制按钮，每一控制按钮，都对应一个海报。
         for( s in imageDatas){
 
             var _html = template
@@ -180,7 +233,11 @@
                 .replace('{{caption}}', imageDatas[s].title)
                 .replace('{{desc}}', imageDatas[s].desc);
             html.push(_html);
+
+            nav.push('<span id="nav_'+s+'" onclick="turn(g(\'#photo_'+s+'\'))" class="i">&nbsp;</span>');
         }
+
+        html.push('<div class = "nav">'+nav.join('')+'</div>');
 
         g('#wrap').innerHTML = html.join('');
 
@@ -254,6 +311,14 @@
             photo.style.top = random(ranges.right.y)+'px';
             photo.style['-webkit-transform'] = 'rotate('+random([-150,150])+'deg)'
         }
+
+        //按钮控制处理
+        var navs = g('.i');
+        for(var s = 0;s<navs.length;s++){
+            navs[s].className = navs[s].className.replace(/i_current\s*/,' ');
+            navs[s].className = navs[s].className.replace(/i_back\s*/,' ');
+        }
+        g('#nav_'+n).className +=' i_current ';
 
         // console.log(photo_left.length, photo_right.length);
     }
