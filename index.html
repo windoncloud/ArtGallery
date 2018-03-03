@@ -33,6 +33,8 @@
             position: absolute;
             z-index: 1;
             box-shadow: 0 0 1px rgba(0,0,0,.01);
+
+            -webkit-transition: all .6s;
         }
 
         .photo .side{
@@ -128,8 +130,8 @@
             left: 10%;
             bottom: 20px;
             z-index: 999;
-            background-color: #fff;
-
+            /*background-color: #fff;*/
+            text-align: center;
           }
 
         /*普通样式*/
@@ -171,6 +173,22 @@
             background-color: #555;
         }
 
+        /*优化样式*/
+        .photo{
+            left: 50%;
+            top: 50%;
+            margin: -160px 0 0 -130px; /*the same width photo_center*/
+        }
+
+        .photo-wrap{
+            -webkit-transform-origin: 0% 50%;
+        }
+        .photo_front .photo-wrap{
+            -webkit-transform: translate(0px, 0px) rotateY(0deg);
+        }
+        .photo_back .photo-wrap{
+            -webkit-transform: translate(260px, 0px) rotateY(180deg);
+        }
 
     </style>
 </head>
@@ -283,6 +301,15 @@
 
         for(s=0;s<_photo.length;s++){
             _photo[s].className = _photo[s].className.replace(/\s*photo_center\s*/,' ');
+            _photo[s].className = _photo[s].className.replace(/\s*photo_front\s*/,' ');
+            _photo[s].className = _photo[s].className.replace(/\s*photo_back\s*/,' ');
+
+            _photo[s].className += ' photo_front';
+
+            _photo[s].style.left = '';
+            _photo[s].style.top = '';
+
+            _photo[s].style['-webkit-transform'] = 'rotate(360deg)  scale(1.3)';
 
             photos.push( _photo[s] );
         }
@@ -304,7 +331,7 @@
 
             photo.style.left = random(ranges.left.x)+'px';
             photo.style.top = random(ranges.left.y)+'px';
-            photo.style['-webkit-transform'] = 'rotate('+random([-150,150])+'deg)'
+            photo.style['-webkit-transform'] = 'rotate('+random([-150,150])+'deg) scale(1)'
         }
 
         for( s in photo_right){
@@ -312,7 +339,7 @@
 
             photo.style.left = random(ranges.right.x)+'px';
             photo.style.top = random(ranges.right.y)+'px';
-            photo.style['-webkit-transform'] = 'rotate('+random([-150,150])+'deg)'
+            photo.style['-webkit-transform'] = 'rotate('+random([-150,150])+'deg) scale(1)'
         }
 
         //按钮控制处理
