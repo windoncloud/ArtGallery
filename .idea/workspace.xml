@@ -19,22 +19,75 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="462" column="30" lean-forward="false" selection-start-line="462" selection-start-column="28" selection-end-line="462" selection-end-column="30" />
+            <state relative-caret-position="459">
+              <caret line="347" column="9" lean-forward="true" selection-start-line="347" selection-start-column="9" selection-end-line="347" selection-end-column="9" />
               <folding>
-                <marker date="1520091245000" expanded="true" signature="6399:6405" ph=" " />
+                <marker date="1520094670000" expanded="true" signature="6399:6405" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="require.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/require.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="13.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/13.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="15.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/15.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="16.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/16.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="17.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/17.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="12.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/12.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/10.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/11.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="18.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/18.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -43,11 +96,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>4.</find>
-      <find>rsort</find>
       <find>photo_center</find>
       <find>.photo</find>
       <find>17</find>
       <find>18</find>
+      <find>re</find>
+      <find>n</find>
+      <find>rsort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,8 +122,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-119" />
-    <option name="y" value="121" />
+    <option name="x" value="2" />
+    <option name="y" value="193" />
     <option name="width" value="1400" />
     <option name="height" value="775" />
   </component>
@@ -95,6 +150,11 @@
             <path>
               <item name="ArtGallery" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArtGallery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtGallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtGallery" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,15 +197,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519832655719</updated>
-      <workItem from="1519832656826" duration="10370000" />
+      <workItem from="1519832656826" duration="12791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10370000" />
+    <option name="totallyTimeSpent" value="12791000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-119" y="121" width="1400" height="775" extended-state="0" />
+    <frame x="2" y="193" width="1400" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -186,7 +246,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/8.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/9.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/images/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/14.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/15.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/16.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/17.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/18.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/13.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/11.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/12.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/10.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -198,10 +313,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="462" column="30" lean-forward="false" selection-start-line="462" selection-start-column="28" selection-end-line="462" selection-end-column="30" />
+        <state relative-caret-position="459">
+          <caret line="347" column="9" lean-forward="true" selection-start-line="347" selection-start-column="9" selection-end-line="347" selection-end-column="9" />
           <folding>
-            <marker date="1520091245000" expanded="true" signature="6399:6405" ph=" " />
+            <marker date="1520094670000" expanded="true" signature="6399:6405" ph=" " />
           </folding>
         </state>
       </provider>

@@ -262,8 +262,7 @@
 
         g('#wrap').innerHTML = html.join('');
 
-        rsort( random([0,imageDatas.length]));
-
+        rsort( random([-1,imageDatas.length-1]));//需要减一，产生0到17与id一一对应
     }
 
     addPhotos();
@@ -295,7 +294,6 @@
 
     //5.排序海报
     function rsort( n ){
-
         var _photo = g('.photo');//有length，不可以sort，不是真正的数组
         var photos = [];
 
@@ -314,7 +312,7 @@
             photos.push( _photo[s] );
         }
 
-        var photo_center =g('#photo_'+n);
+        var photo_center =g('#photo_'+ n);
         photo_center.className += ' photo_center';
 
         photo_center = photos.splice(n,1)[0];
